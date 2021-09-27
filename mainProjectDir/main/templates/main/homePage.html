@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is the home page</h1>
-</body>
-</html>
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div>
+    <div>
+        <h1>Hello **Name**!</h1>
+        <h3>Let's be produvtive today.</h3>
+    </div>
+    <div>
+        <button>Incomplete</button><button>Completed</button>
+    </div>
+    <div>
+        <ul>
+            {% for task in tasks %}
+                <li>{{task}}</li>
+            {% endfor %}</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock content %}
