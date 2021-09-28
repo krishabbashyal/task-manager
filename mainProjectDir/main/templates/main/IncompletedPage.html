@@ -3,13 +3,16 @@
 {% block content %}
 <div>
     <div>
-        <button><a href="/logout">Log Out</a></button>
+        <button><a href={% url 'logout' %}>Log Out</a></button>
     </div>
         <h1>Hello {{user.first_name}}!</h1>
-        <h3>Let's be produvtive today.</h3>
+        <h3>Let's be productive today.</h3>
     </div>
     <div>
-        <button>Incomplete</button><button>Completed</button>
+        <button><a href={% url 'incompleted' %}>Incompleted</a></button><button><a href={% url 'completed' %}>Completed</a></button>
+    </div>
+    <div>
+        <button><a href={% url 'taskCreate' %}>+</a></button>
     </div>
     <div>
         <ul>

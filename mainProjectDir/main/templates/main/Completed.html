@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div>
+    <div>
+        <button><a href={% url 'logout' %}>Log Out</a></button>
+    </div>
+        <h1>Hello {{user.first_name}}!</h1>
+        <h3>Look at everything you've accomplished.</h3>
+    </div>
+    <div>
+        <button><a href={% url 'incompleted' %}>Incompleted</a></button><button><a href={% url 'completed' %}>Completed</a></button>
+    </div>
+    <div>
+    </div>
+    <div>
+        <ul>
+            {% for task in tasks %}
+                <li>{{task}}</li>
+            {% endfor %}</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock content %}
