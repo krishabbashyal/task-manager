@@ -1,0 +1,22 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Task{% endblock title %}
+
+{% block content %}
+    {% if user == task.author %}
+        <h1>{{task.title}}</h1>
+        <p>{{task.description}}</p>
+        <p>Task Completion: {{task.completion}}</p>
+        {% if task.completion %}
+            <a href="{% url 'completed' %}"><button>Done</button></a>
+        {% else %}
+            <a href="{% url 'incompleted' %}"><button>Done</button></a>
+        {% endif %}
+    {% else  %}
+        <h1>Access Denied: You do not have the permissions required to view this data.</h1>
+        <a href="{% url 'incompleted' %}"><button>Go Back</button></a>
+
+
+    {% endif %}
+
+{% endblock content %}

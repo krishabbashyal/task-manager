@@ -1,7 +1,9 @@
 from typing import List
+from django.contrib.auth.models import User ##############################
 from django.shortcuts import render
 from django.views.generic.base import TemplateView
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, DetailView
+from django.views.generic.edit import CreateView
 from .models import Task
 from .forms import TaskCreation
 
@@ -37,4 +39,11 @@ class CreateTask(CreateView):
     
     success_url = "/incompleted"
     success_message = "Account was created successfully, you may now Log In"
+
+class TaskDetailView(DetailView):
+    model = Task
+    template_name = "main/taskDetail.html"
+
+
+
     

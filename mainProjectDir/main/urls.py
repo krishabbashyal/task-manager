@@ -6,4 +6,5 @@ urlpatterns = [
     path("incompleted/", login_required(views.IncompletedView.as_view()), name = "incompleted"),
     path("completed/", login_required(views.CompletedView.as_view()), name = "completed"),
     path("taskCreate/", login_required(views.CreateTask.as_view()), name = "taskCreate"),
+    path("taskDetail/<int:pk>", login_required(views.TaskDetailView.as_view()), name = "taskDetail"),
 ]

@@ -3,21 +3,20 @@
 {% block content %}
 <div>
     <div>
-        <button><a href={% url 'logout' %}>Log Out</a></button>
+        <a href="{% url 'logout' %}"><button>Log Out</button></a>
     </div>
         <h1>Hello {{user.first_name}}!</h1>
-        <h3>Look at everything you've accomplished.</h3>
+        <h3>Look back at everying you've accomplished here.</h3>
     </div>
     <div>
-        <button><a href={% url 'incompleted' %}>Incompleted</a></button><button><a href={% url 'completed' %}>Completed</a></button>
+        <a href="{% url 'incompleted' %}"><button>Incompleted</button></a><a href="{% url 'completed' %}"><button>Completed</button></a>
     </div>
-    <div>
-    </div>
+
     <div>
         <ul>
             {% for task in tasks %}
-                <li>{{task}}</li>
-            {% endfor %}</li>
+                <li><a href = "{% url 'taskDetail' pk=task.pk%}"><button>{{task.title}}</button></a></li>
+            {% endfor %}
         </ul>
     </div>
 </div>
