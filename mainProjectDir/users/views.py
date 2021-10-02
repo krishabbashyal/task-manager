@@ -18,3 +18,5 @@ class UserView(SuccessMessageMixin, CreateView):
     success_message = "Account was created successfully, you may now Log In"
 
 
+class HomePageView(TemplateView):
+    template_name = "users/home.html"

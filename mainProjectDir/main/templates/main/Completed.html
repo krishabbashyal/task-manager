@@ -15,7 +15,9 @@
     <div>
         <ul>
             {% for task in tasks %}
-                <li><a href = "{% url 'taskDetail' pk=task.pk%}"><button>{{task.title}}</button></a></li>
+                <li><a href = "{% url 'taskDetail' pk=task.pk%}"><button>{{task.title}}</button></a>
+                    <a href = "{% url 'taskUpdate' pk=task.pk%}"><button>Edit</button></a>
+                    <a href = "{% url 'taskDelete' pk=task.pk%}"><button>Delete</button></a></li>
             {% endfor %}
         </ul>
     </div>

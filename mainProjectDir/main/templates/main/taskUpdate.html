@@ -14,7 +14,12 @@
                     <hr>
                 </div>
             {% endfor %}
-        <button>Submit</button>
+        <button>Update</button>
     </form>
+    {% if task.completion %}
+        <a href="{% url 'completed' %}"><button>Cancel</button></a>
+        {% else %}
+        <a href="{% url 'incompleted' %}"><button>Cancel</button></a>
+        {% endif %}
 </div>
 {% endblock content %}
