@@ -1,6 +1,9 @@
 {% extends 'users/base.html' %}
+{% load static %}
 
 {% block title %}Log In{% endblock title %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'users/users.css' %}">{% endblock css %}
 
 {% block content %}
 <div>
@@ -16,12 +19,16 @@
     <div>
         <form method="POST">
             {% csrf_token %}
-            <fieldset>
-                <legend>Log In</legend>
-                {{form}}
-            <div>
-                <button type = "submit">Log In</button>
-            </div>
+                <fieldset>
+                    <legend>Log In</legend>
+                    {% for field in form %}
+                    <div class="form-control {% if field.errors %}errors{% endif %}">
+                    {{ field }}
+                    {{ field.errors }}
+                    </div>
+                    {% endfor %}
+                    <button>Log In</button>
+                </fieldset>
         </form>
             <div>
                 <small>

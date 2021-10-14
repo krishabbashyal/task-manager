@@ -1,4 +1,7 @@
 {% extends 'main/base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'main/main.css' %}">{% endblock css %}
 
 {% block title %}Create a Task{% endblock title %}
 

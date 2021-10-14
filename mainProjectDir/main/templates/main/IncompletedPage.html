@@ -1,4 +1,7 @@
 {% extends 'main/base.html' %}
+{% load static %}
+
+{% block css %}<link rel="stylesheet" href="{% static 'main/main.css' %}">{% endblock css %}
 
 {% block content %}
 <div>
@@ -27,8 +30,8 @@
         <ul>
             {% for task in tasks %}
                 <li><a href = "{% url 'taskDetail' pk=task.pk%}"><button>{{task.title}}</button></a>
-                    <a href = "{% url 'taskUpdate' pk=task.pk%}"><button>Edit</button></a>
-                    <a href = "{% url 'taskDelete' pk=task.pk%}"><button>Delete</button></a></li>
+                    <a href = "{% url 'taskUpdate' pk=task.pk%}"><button><img src="{% static 'main/Edit.png' %}" alt="Edit"></button></a>
+                    <a href = "{% url 'taskDelete' pk=task.pk%}"><button><img src="{% static 'main/Trash.png' %}" alt="Delete"></button></a></li>
             {% endfor %}
         </ul>
     </div>

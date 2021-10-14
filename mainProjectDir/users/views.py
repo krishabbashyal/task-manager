@@ -3,7 +3,7 @@ from django.views.generic.base import TemplateView
 from django.views.generic import ListView
 from django.views.generic.edit import CreateView
 from django.contrib.auth.models import User
-from .forms import RegisterForm
+from .forms import RegisterForm, LoginForm
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 
