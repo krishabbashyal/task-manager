@@ -9,7 +9,7 @@
 
 
 <div>
-    <form method = "POST">
+    <form method = "POST" novalidate>
         {% csrf_token %}
             <div class = 'register-panel'>
                 <legend class = 'register-card-title'>Sign Up</legend>
@@ -19,9 +19,10 @@
                 {{ field.errors }}
                 </div>
                 {% endfor %}
-                <button>Create</button>
+                <hr>
+                <button class = 'create-button'>Create</button>
                 <div>
-                    <small>
+                    <small class = 'log-in-instead'>
                         Already have an account?<a href="{% url 'login' %}"> Log In</a> Instead
                     </small>
                 </div>

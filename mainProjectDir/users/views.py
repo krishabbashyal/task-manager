@@ -15,7 +15,7 @@ class UserView(SuccessMessageMixin, CreateView):
     form_class = RegisterForm
     template_name = "users/registerPage.html"
     success_url = "/login"
-    success_message = "Account was created successfully, you may now Log In"
+    success_message = "User was created, you may now use those credentials to log in." 
 
 
 class HomePageView(TemplateView):

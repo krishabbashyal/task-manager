@@ -12,17 +12,103 @@ h1, h2, h3, h4, h5, h6{
     padding: 1rem;
     width: 20%;
     text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.login-panel{
+    background-color: white;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
 }
 
 .register-card-title{
     font-size: 1.75rem;
+    background: -webkit-linear-gradient(#a174b8, #fe7507);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
     font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.login-card-title{
+    font-size: 1.75rem;
+    background: -webkit-linear-gradient(#a174b8, #fe7507);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.create-button{
+    margin: 2%;
+    width: 90%;
+    height: 3.5rem;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 1.75rem;
+    font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
+    font-weight: bolder;
+    color: #ffff;
+    background-image: linear-gradient(to right, #189dff, #6109ff);
+}
+
+.login-button{
+    margin: 2%;
+    width: 90%;
+    height: 3.5rem;
+    border-radius: 15px;
+    border-style: none;
+    font-size: 1.75rem;
+    font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
+    font-weight: bolder;
+    color: #ffff;
+    background-image: linear-gradient(to right, #189dff, #6109ff);
+}
+
+.log-in-instead{
+    font-family: 'Century Gothic'; 
+    font-weight: bolder;
+    color: #a1a1a1;
+}
+.log-in-instead a{
+    color: #a1a1a1
+}
+
+.sign-in-instead{
+    font-family: 'Century Gothic'; 
+    font-weight: bolder;
+    color: #a1a1a1;
+}
+.sign-in-instead a{
+    color: #a1a1a1
 }
 
 .form-control {
     margin-bottom: 3%;
     margin-top: 3%;
+}
+
+.account-created-message{
+    border-radius: 25px;
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 33%;
+    margin-bottom: -8%;
+    background-color: #d2f4db;
+    color: #46763a;
+    list-style: none;
+
 }
 
 .form-control input{
@@ -43,7 +129,6 @@ h1, h2, h3, h4, h5, h6{
 
 .form-control input:focus{
     outline: none;
-    background-color: #e0e0e0;
 }
 
 

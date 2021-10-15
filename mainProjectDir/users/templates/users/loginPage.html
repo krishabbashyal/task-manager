@@ -11,30 +11,31 @@
         {% if messages %}
             <ul class="messages">
                 {% for message in messages %}
-                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    <li class = "account-created-message"{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
                 {% endfor %}
             </ul>
         {% endif %}
     </div>
     <div>
-        <form method="POST">
+        <form method="POST" novalidate>
             {% csrf_token %}
-                <fieldset>
-                    <legend>Log In</legend>
+                <div class = 'login-panel'>
+                    <legend class = 'login-card-title'>Log In</legend>
                     {% for field in form %}
                     <div class="form-control {% if field.errors %}errors{% endif %}">
-                    {{ field }}
-                    {{ field.errors }}
+                        {{ field }}
+                        {{ field.errors }}
                     </div>
                     {% endfor %}
-                    <button>Log In</button>
-                </fieldset>
+                    <hr>
+                    <button class = 'login-button'>Log In</button>
+                    <div>
+                        <small class = 'sign-in-instead'>
+                            Don't have an account?<a href="{% url 'register' %}"> Sign Up</a> Instead
+                        </small>
+                    </div>
+                </div>
         </form>
-            <div>
-                <small>
-                    Don't have an account? <a href="{% url 'register' %}">Sign Up</a> Instead
-                </small>
-            </div>
     </div>
 </div>
 {% endblock content %}
