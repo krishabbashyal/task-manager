@@ -19,7 +19,7 @@ body {
     width: 20%;
     text-align: center;
     margin-top: -18%;
-    margin-left: 65%;
+    margin-left: 62%;
 }
 
 .login-panel{
@@ -30,29 +30,29 @@ body {
     text-align: center;
     margin: auto;
     margin-top: -18%;
-    margin-left: 65%;
+    margin-left: 62%;
 }
 
 .register-card-title{
-    font-size: 1.75rem;
+    font-size: 175%;
     background: -webkit-linear-gradient(#a174b8, #fe7507);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Copperplate Gothic Light';
     font-weight: bolder;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 .login-card-title{
-    font-size: 1.75rem;
+    font-size: 175%;
     background: -webkit-linear-gradient(#a174b8, #fe7507);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Copperplate Gothic Light'; 
     font-weight: bolder;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 6%;
+    margin-bottom: 6%;
 }
 
 .create-button{
@@ -61,7 +61,7 @@ body {
     height: 3.5rem;
     border-radius: 15px;
     border-style: none;
-    font-size: 1.75rem;
+    font-size: 175%;
     font-family: 'Copperplate Gothic Light'; 
     font-weight: bolder;
     color: #ffff;
@@ -74,7 +74,7 @@ body {
     height: 3.5rem;
     border-radius: 15px;
     border-style: none;
-    font-size: 1.75rem;
+    font-size: 175%;
     font-family: 'Copperplate Gothic Light'; 
     font-weight: bolder;
     color: #ffff;
@@ -112,11 +112,9 @@ body {
     background-color: #d2f4db;
     color: #46763a;
     list-style: none;
-    margin-left: 62%;
-    position: relative;
-    top: -355px;
-    
-
+    margin-left: 57%;
+    position: absolute;
+    top: 15%;
 }
 
 .form-control input{
@@ -159,11 +157,12 @@ body {
 
 .krishab-tag{
     color: white;
+    font-size: 85%;
     padding: 1rem;
     width: 20%;
     text-align: center;
     margin-top: -1%;
-    margin-left: 65%;
+    margin-left: 62%;
 
 }
 
