@@ -1,3 +1,13 @@
+@font-face {
+    font-family:'Copperplate Gothic Light';
+    src: url(fonts/COPRGTB.TTF);
+}
+
+@font-face {
+    font-family: 'Century Gothic'; 
+    src: url(fonts/GOTHICB.TTF);
+}
+
 body {
     background-image: url('background.png');
 }
@@ -28,7 +38,7 @@ body {
     background: -webkit-linear-gradient(#a174b8, #fe7507);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
+    font-family: 'Copperplate Gothic Light';
     font-weight: bolder;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -39,7 +49,7 @@ body {
     background: -webkit-linear-gradient(#a174b8, #fe7507);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
+    font-family: 'Copperplate Gothic Light'; 
     font-weight: bolder;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -52,7 +62,7 @@ body {
     border-radius: 15px;
     border-style: none;
     font-size: 1.75rem;
-    font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
+    font-family: 'Copperplate Gothic Light'; 
     font-weight: bolder;
     color: #ffff;
     background-image: linear-gradient(to right, #189dff, #6109ff);
@@ -65,7 +75,7 @@ body {
     border-radius: 15px;
     border-style: none;
     font-size: 1.75rem;
-    font-family: 'Copperplate Gothic Light', Copperplate, Balthazar; 
+    font-family: 'Copperplate Gothic Light'; 
     font-weight: bolder;
     color: #ffff;
     background-image: linear-gradient(to right, #189dff, #6109ff);
@@ -193,4 +203,5 @@ body {
     font-size: 24px;
     font-weight: 100;
     font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
 }
