@@ -2,10 +2,6 @@ body {
     background-image: url('background.png');
 }
 
-h1, h2, h3, h4, h5, h6{
-    color: #ffff;
-}
-
 .register-panel{
     background-color: white;
     border-radius: 25px;
@@ -13,7 +9,8 @@ h1, h2, h3, h4, h5, h6{
     width: 20%;
     text-align: center;
     margin: auto;
-    margin-top: 10%;
+    margin-top: -18%;
+    margin-left: 65%;
 }
 
 .login-panel{
@@ -23,7 +20,8 @@ h1, h2, h3, h4, h5, h6{
     width: 20%;
     text-align: center;
     margin: auto;
-    margin-top: 10%;
+    margin-top: -18%;
+    margin-left: 65%;
 }
 
 .register-card-title{
@@ -100,14 +98,15 @@ h1, h2, h3, h4, h5, h6{
 .account-created-message{
     border-radius: 25px;
     padding: 1rem;
-    width: 30%;
+    width: 25%;
     text-align: center;
-    margin-top: 8%;
-    margin-left: 33%;
-    margin-bottom: -8%;
     background-color: #d2f4db;
     color: #46763a;
     list-style: none;
+    margin-left: 62%;
+    position: relative;
+    top: -355px;
+    
 
 }
 
@@ -147,4 +146,52 @@ h1, h2, h3, h4, h5, h6{
 
 .errors label{
     color: #680000;
+}
+
+.krishab-tag{
+    color: white;
+    padding: 1rem;
+    width: 20%;
+    text-align: center;
+    margin-top: -1%;
+    margin-left: 65%;
+
+}
+
+.text-group{
+    font-size: 2.2em;
+    margin-left: 13%;
+    margin-top: 13%;
+    font-family: 'Century Gothic'; 
+    font-weight: bolder;
+}
+
+.text-one{
+    background-color: #6f00ff1f;
+    background-image: linear-gradient(45deg, #fe7204, #a97ef0, #a97ef0);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.text-two{
+    margin-top: -3%;
+    background-color: #6f00ff1f;
+    background-image: linear-gradient(45deg, #fe7204, #a97ef0, #a97ef0);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.text-paragraph{
+    color: white;
+    margin-top: -2%;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: normal;
 }
