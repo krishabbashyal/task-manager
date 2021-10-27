@@ -18,8 +18,8 @@ body {
     padding: 1rem;
     width: 20%;
     text-align: center;
-    margin-top: -18%;
-    margin-left: 62%;
+    margin: auto;
+    margin-top: 9%;
 }
 
 .login-panel{
@@ -29,8 +29,7 @@ body {
     width: 20%;
     text-align: center;
     margin: auto;
-    margin-top: -18%;
-    margin-left: 62%;
+    margin-top: 9%;
 }
 
 .register-card-title{
@@ -112,9 +111,11 @@ body {
     background-color: #d2f4db;
     color: #46763a;
     list-style: none;
-    margin-left: 57%;
-    position: absolute;
-    top: 15%;
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 36%;
+    margin-bottom: -8%;
+
 }
 
 .form-control input{
@@ -161,8 +162,8 @@ body {
     padding: 1rem;
     width: 20%;
     text-align: center;
+    margin: auto;
     margin-top: -1%;
-    margin-left: 62%;
 
 }
 
@@ -172,35 +173,4 @@ body {
     margin-top: 10%;
     font-family: 'Century Gothic'; 
     font-weight: bolder;
-}
-
-.text-one{
-    background-color: #6f00ff1f;
-    background-image: linear-gradient(45deg, #fe7204, #a97ef0, #a97ef0);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-}
-
-.text-two{
-    margin-top: -3%;
-    background-color: #6f00ff1f;
-    background-image: linear-gradient(45deg, #fe7204, #a97ef0, #a97ef0);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-}
-.text-paragraph{
-    color: white;
-    margin-top: -2%;
-    width: 50%;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 100;
-    font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
 }
