@@ -13,6 +13,7 @@
             <ul class="messages">
                 {% for message in messages %}
                     <li class = "account-created-message"{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                    <li class = "account-not-valid"{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
                 {% endfor %}
             </ul>
         {% endif %}

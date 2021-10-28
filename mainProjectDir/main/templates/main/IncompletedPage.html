@@ -5,7 +5,7 @@
 
 {% block content %}
 <div>
-    <div>
+    <div class = "task-created-message">
         {% if messages %}
             <ul class="messages">
                 {% for message in messages %}
@@ -14,26 +14,28 @@
             </ul>
         {% endif %}
     </div>
-    <div>
+    <div class = "log-out-button">
         <a href="{% url 'logout' %}"><button>Log Out</button></a>
     </div>
         <h1>Hello {{user.first_name}}!</h1>
         <h3>Let's be productive today.</h3>
     </div>
-    <div>
-        <a href="{% url 'incompleted' %}"><button>Incompleted</button></a><a href="{% url 'completed' %}"><button>Completed</button></a>
-    </div>
-    <div>
-        <a href="{% url 'taskCreate' %}"><button> + </button></a>
-    </div>
-    <div>
-        <ul>
-            {% for task in tasks %}
-                <li><a href = "{% url 'taskDetail' pk=task.pk%}"><button>{{task.title}}</button></a>
-                    <a href = "{% url 'taskUpdate' pk=task.pk%}"><button><img src="{% static 'main/Edit.png' %}" alt="Edit"></button></a>
-                    <a href = "{% url 'taskDelete' pk=task.pk%}"><button><img src="{% static 'main/Trash.png' %}" alt="Delete"></button></a></li>
-            {% endfor %}
-        </ul>
+    <div class = 'incompleted-main-panel'>
+        <div>
+            <a href="{% url 'incompleted' %}"><button class = "incomplete-button-active">Incomplete</button></a><a href="{% url 'completed' %}"><button class = "completed-button">Completed</button></a>
+        </div>
+        <div>
+            <a href="{% url 'taskCreate' %}"><button class = "create-task-button"> + </button></a>
+        </div>
+        <div>
+            <ul>
+                {% for task in tasks %}
+                    <li class = "task-list"><a href = "{% url 'taskDetail' pk=task.pk%}"><button id = 'task-name'>{{task.title}}</button></a>
+                        <a href = "{% url 'taskUpdate' pk=task.pk%}"><button>Update</button></a>
+                        <a href = "{% url 'taskDelete' pk=task.pk%}"><button>Delete</button></a></li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
 </div>
 
