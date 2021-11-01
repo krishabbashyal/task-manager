@@ -15,7 +15,7 @@ class IncompletedView(ListView):
     model = Task
     template_name = "main/IncompletedPage.html"
     context_object_name = "tasks"
-    ordering = ['-date_created']
+    ordering = ['date_created']
 
     def get_queryset(self):
         base = super().get_queryset()
@@ -26,7 +26,7 @@ class CompletedView(ListView):
     model = Task
     template_name = "main/Completed.html"
     context_object_name = "tasks"
-    ordering = ['-date_created']
+    ordering = ['date_created']
 
     def get_queryset(self):
         base = super().get_queryset()
