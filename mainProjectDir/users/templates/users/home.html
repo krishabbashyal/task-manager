@@ -1,14 +1,23 @@
-{% extends 'users/base.html' %}
-{% load static %}
-
-{% block css %}<link rel="stylesheet" href="{% static 'users/users.css' %}">{% endblock css %}
-
-{% block content%}
+{% extends 'users/base.html' %} {% load static %} {% block css %}<link
+  rel="stylesheet"
+  href="{% static 'users/users.css' %}"
+/>{% endblock css %} {% block content%}
 
 <div>
-    <h1>Welcome to the homepage of my website, Register or Login to continue </h1>
-    <a href="{% url 'register' %}"><button>Register</button></a>
-    <a href="{% url 'login' %}"><button>Log In</button></a>
+  <div>
+    <h1>Manage all of your tasks,</h1>
+    <h1>from just one place.</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam
+      hic eveniet ex totam sit alias quo velit maxime obcaecati tempore nulla,
+      nemo consequuntur at debitis inventore quisquam rem repellat.
+    </p>
+  </div>
+  <h1>Just a couple more steps,</h1>
+  <h1>see you soon.</h1>
+
+  <a href="{% url 'register' %}"><button>Register</button></a>
+  <a href="{% url 'login' %}"><button>Log In</button></a>
 </div>
 
 {% endblock content%}

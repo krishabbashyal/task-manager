@@ -113,7 +113,7 @@ body {
   font-family: "Century Gothic";
   width: fit-content;
   font-weight: bolder;
-  background: -webkit-linear-gradient(#7957f5, #fe7507);
+  background: -webkit-linear-gradient(135deg,#7957f5, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: auto;
@@ -162,7 +162,7 @@ body {
   font-family: "Copperplate Gothic Light";
   font-weight: bolder;
   background-color: white;
-  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  background: -webkit-linear-gradient(135deg,#7957f5, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -186,7 +186,7 @@ body {
   font-family: "Century Gothic";
   width: fit-content;
   font-weight: bolder;
-  background: -webkit-linear-gradient(#7957f5, #fe7507);
+  background: -webkit-linear-gradient(135deg,#7957f5, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -196,11 +196,12 @@ body {
 }
 
 .message {
-  font-size: 25px;
+  font-size: 35px;
   font-family: "Century Gothic";
   margin-top: 7%;
   font-weight: bolder;
-  background: -webkit-linear-gradient(#7957f5, #fe7507);
+  width: fit-content;
+  background: -webkit-linear-gradient(135deg,#7957f5, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -218,7 +219,7 @@ body {
   font-family: "Copperplate Gothic Light";
   font-weight: bolder;
   background-color: white;
-  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  background: -webkit-linear-gradient(135deg,#7957f5, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: solid gray;
@@ -235,7 +236,7 @@ body {
   font-family: "Copperplate Gothic Light";
   font-weight: bolder;
   background-color: white;
-  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  background: -webkit-linear-gradient(135deg,#7957f5, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -251,7 +252,7 @@ body {
   font-family: "Copperplate Gothic Light";
   font-weight: bolder;
   background-color: white;
-  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  background: -webkit-linear-gradient(135deg,#7957f5, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border: solid gray;
