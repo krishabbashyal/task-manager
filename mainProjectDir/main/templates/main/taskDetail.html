@@ -9,6 +9,9 @@
 <div>
     <h1>{{task.title}}</h1>
     <p>{{task.description}}</p>
+    {% if task.due_date %}
+        <p>Due Date: {{task.due_date}}</p>
+    {% endif %}
     <p>Task Completion: {{task.completion}}</p>
     {% if task.completion %}
         <a href="{% url 'completed' %}"><button>Done</button></a>

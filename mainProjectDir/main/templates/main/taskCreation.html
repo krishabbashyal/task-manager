@@ -1,12 +1,11 @@
 {% extends 'main/base.html' %}
 {% load static %}
-
 {% block css %}<link rel="stylesheet" href="{% static 'main/main.css' %}">{% endblock css %}
-
 {% block title %}Create a Task{% endblock title %}
 
 {% block content %}
-<div>
+<h1 class = "create-new-task-page">Create a new task.</h1>
+<div class = "create-task-form">
     <form method = "POST">
         {% csrf_token %}
             {% for field in form %}
@@ -17,7 +16,9 @@
                     <hr>
                 </div>
             {% endfor %}
+            
         <button>Submit</button>
     </form>
 </div>
+
 {% endblock content %}

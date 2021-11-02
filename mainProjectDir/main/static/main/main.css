@@ -8,8 +8,22 @@
   src: url(fonts/GOTHICB.TTF);
 }
 
+html,
 body {
-  background-image: url("background.png");
+  max-width: 100%;
+  overflow-x: hidden;
+  background: rgb(48,36,80);
+  background: linear-gradient(135deg, rgba(48,36,80,1) 0%, rgba(40,41,83,1) 28%, rgba(0,69,98,1) 100%);
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .form-control {
@@ -55,13 +69,71 @@ body {
   color: #680000;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 .incompleted-main-panel {
   background-color: white;
   margin: auto;
+  margin-top: 1%;
   text-align: center;
   width: 35%;
   border-radius: 25px;
   padding: 2rem;
+  overflow-y: auto;
+  max-height: 60%;
+}
+
+.create-task-form{
+  background-color: white;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+  align-items: center;
+  width: 35%;
+  border-radius: 25px;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 60%;
+}
+
+.create-task-form input{
+  margin: auto;
+}
+
+.create-task-form textarea{
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.create-new-task-page{
+  font-size: 55px;
+  font-family: "Century Gothic";
+  width: fit-content;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#7957f5, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto;
+  margin-top: 4%;
+  margin-bottom: -3%;
+}
+
+.create-task-form button{
+  margin: 2%;
+  margin-top: -2%;
+  width: 18%;
+  margin-bottom: -5%;
+  height: 1.85rem;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 20px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  color: #ffff;
+  background-image: linear-gradient(to right, #189dff, #6109ff);
 }
 
 .create-task-button {
@@ -93,6 +165,46 @@ body {
   background: -webkit-linear-gradient(#9241bb, #fe7507);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.task-created-message {
+  border-radius: 25px;
+  padding: .6rem;
+  width: 30%;
+  text-align: center;
+  background-color: #d2f4db;
+  color: #46763a;
+  list-style: none;
+  margin: auto;
+  margin-top: 1%;
+  position: inherit;
+  margin-bottom: 0%;
+}
+
+.username {
+  font-size: 75px;
+  font-family: "Century Gothic";
+  width: fit-content;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#7957f5, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  margin-bottom: -7.5%;
+  left: 25%;
+
+}
+
+.message {
+  font-size: 25px;
+  font-family: "Century Gothic";
+  margin-top: 7%;
+  font-weight: bolder;
+  background: -webkit-linear-gradient(#7957f5, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  left: 25%;
 }
 
 .incomplete-button-active {
@@ -147,10 +259,13 @@ body {
 .completed-main-panel {
   background-color: white;
   margin: auto;
+  margin-top: 1%;
+  margin-bottom: 3%;
   text-align: center;
   width: 35%;
   border-radius: 25px;
   padding: 2rem;
+  overflow: auto
 }
 .task-list {
   list-style: none;
@@ -193,7 +308,7 @@ body {
   border-radius: 15px;
   border-style: none;
   font-size: 20px;
-  position: absolute;
+  position: fixed;
   margin-left: 85%;
   font-weight: bolder;
   color: #ffff;

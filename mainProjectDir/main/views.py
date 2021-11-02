@@ -1,5 +1,5 @@
 from typing import List
-from django.contrib.auth.models import User ##############################
+from django.contrib.auth.models import User
 from django.shortcuts import render
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView, DetailView
@@ -7,7 +7,7 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Task
 from django.contrib import messages
 from django.contrib.auth.mixins import UserPassesTestMixin
-from .forms import TaskCreation
+from .forms import TaskCreation, TaskUpdate
 from django.contrib.messages.views import SuccessMessageMixin
 
 # Create your views here.
@@ -16,6 +16,7 @@ class IncompletedView(ListView):
     template_name = "main/IncompletedPage.html"
     context_object_name = "tasks"
     ordering = ['date_created']
+ 
 
     def get_queryset(self):
         base = super().get_queryset()
@@ -55,15 +56,15 @@ class TaskDetailView(UserPassesTestMixin, DetailView):
 
 class TaskUpdateView(SuccessMessageMixin, UserPassesTestMixin, UpdateView):
     model = Task
+    form_class = TaskUpdate
     template_name = "main/taskUpdate.html"
-    fields = ['title', 'description', 'completion']
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
     success_url = "/incompleted"
-    success_message = "Task was updated successfully, if status was changed you can view it in the new section."
+    success_message = "Task was updated successfully."
 
     def test_func(self):
         task = self.get_object()

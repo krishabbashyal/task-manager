@@ -1,176 +1,186 @@
 @font-face {
-    font-family:'Copperplate Gothic Light';
-    src: url(fonts/COPRGTB.TTF);
+  font-family: "Copperplate Gothic Light";
+  src: url(fonts/COPRGTB.TTF);
 }
 
 @font-face {
-    font-family: 'Century Gothic'; 
-    src: url(fonts/GOTHICB.TTF);
+  font-family: "Century Gothic";
+  src: url(fonts/GOTHICB.TTF);
 }
 
+html,
 body {
-    background-image: url('background.png');
+  max-width: 100%;
+  overflow-x: hidden;
+  background: rgb(48,36,80);
+  background: linear-gradient(135deg, rgba(48,36,80,1) 0%, rgba(40,41,83,1) 28%, rgba(0,69,98,1) 100%);
 }
 
-.register-panel{
-    background-color: white;
-    border-radius: 25px;
-    padding: 1rem;
-    width: 20%;
-    text-align: center;
-    margin: auto;
-    margin-top: 9%;
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.login-panel{
-    background-color: white;
-    border-radius: 25px;
-    padding: 1rem;
-    width: 20%;
-    text-align: center;
-    margin: auto;
-    margin-top: 9%;
+.register-panel {
+  background-color: white;
+  border-radius: 25px;
+  padding: 1rem;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  margin-top: 9%;
 }
 
-.register-card-title{
-    font-size: 175%;
-    background: -webkit-linear-gradient(#a174b8, #fe7507);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Copperplate Gothic Light';
-    font-weight: bolder;
-    margin-top: 6%;
-    margin-bottom: 6%;
+.login-panel {
+  background-color: white;
+  border-radius: 25px;
+  padding: 1rem;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  margin-top: 9%;
 }
 
-.login-card-title{
-    font-size: 175%;
-    background: -webkit-linear-gradient(#a174b8, #fe7507);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    margin-top: 6%;
-    margin-bottom: 6%;
+.register-card-title {
+  font-size: 175%;
+  background: -webkit-linear-gradient(#a174b8, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
-.create-button{
-    margin: 2%;
-    width: 90%;
-    height: 3.5rem;
-    border-radius: 15px;
-    border-style: none;
-    font-size: 175%;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    color: #ffff;
-    background-image: linear-gradient(to right, #189dff, #6109ff);
+.login-card-title {
+  font-size: 175%;
+  background: -webkit-linear-gradient(#a174b8, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  margin-top: 6%;
+  margin-bottom: 6%;
 }
 
-.login-button{
-    margin: 2%;
-    width: 90%;
-    height: 3.5rem;
-    border-radius: 15px;
-    border-style: none;
-    font-size: 175%;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    color: #ffff;
-    background-image: linear-gradient(to right, #189dff, #6109ff);
+.create-button {
+  margin: 2%;
+  width: 90%;
+  height: 3.5rem;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 175%;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  color: #ffff;
+  background-image: linear-gradient(to right, #189dff, #6109ff);
 }
 
-.log-in-instead{
-    font-family: 'Century Gothic'; 
-    font-weight: bolder;
-    color: #a1a1a1;
-}
-.log-in-instead a{
-    color: #a1a1a1
+.login-button {
+  margin: 2%;
+  width: 90%;
+  height: 3.5rem;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 175%;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  color: #ffff;
+  background-image: linear-gradient(to right, #189dff, #6109ff);
 }
 
-.sign-in-instead{
-    font-family: 'Century Gothic'; 
-    font-weight: bolder;
-    color: #a1a1a1;
+.log-in-instead {
+  font-family: "Century Gothic";
+  font-weight: bolder;
+  color: #a1a1a1;
 }
-.sign-in-instead a{
-    color: #a1a1a1
+.log-in-instead a {
+  color: #a1a1a1;
+}
+
+.sign-in-instead {
+  font-family: "Century Gothic";
+  font-weight: bolder;
+  color: #a1a1a1;
+}
+.sign-in-instead a {
+  color: #a1a1a1;
 }
 
 .form-control {
-    margin-bottom: 3%;
-    margin-top: 3%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
-.account-created-message{
-    border-radius: 25px;
-    padding: 1rem;
-    width: 25%;
-    text-align: center;
-    background-color: #d2f4db;
-    color: #46763a;
-    list-style: none;
-    margin: auto;
-    margin-top: 10%;
-    margin-left: 36%;
-    margin-bottom: -8%;
-
+.account-created-message {
+  border-radius: 25px;
+  padding: 1rem;
+  width: 25%;
+  text-align: center;
+  background-color: #d2f4db;
+  color: #46763a;
+  list-style: none;
+  margin: auto;
+  margin-top: 10%;
+  margin-left: 36%;
+  margin-bottom: -9%;
 }
 
-.form-control input{
-    font-family: 'Century Gothic'; 
-    font-size: .85rem;
-    font-weight: 600;
-    outline: none;
-    text-align: center;
-    background-color: #d3d4ce;
-    border-radius: 25px;
-    display: block;
-    width: 90%;
-    height: 3rem;
-    margin-left: 4%;
-    border-style: none;
-
+.form-control input {
+  font-family: "Century Gothic";
+  font-size: 0.85rem;
+  font-weight: 600;
+  outline: none;
+  text-align: center;
+  background-color: #d3d4ce;
+  border-radius: 25px;
+  display: block;
+  width: 90%;
+  height: 3rem;
+  margin-left: 4%;
+  border-style: none;
 }
 
-.form-control input:focus{
-    outline: none;
+.form-control input:focus {
+  outline: none;
 }
 
-
-.errorlist{
-    list-style: none;
-    margin: 0;
-    margin-top: .5rem;
-    padding: 0;
-    color: #680000;
+.errorlist {
+  list-style: none;
+  margin: 0;
+  margin-top: 0.5rem;
+  padding: 0;
+  color: #680000;
 }
 
-.errors input{
-    border-color: #680000;
-    background-color: #d6000023;
+.errors input {
+  border-color: #680000;
+  background-color: #d6000023;
 }
 
-.errors label{
-    color: #680000;
+.errors label {
+  color: #680000;
 }
 
-.krishab-tag{
-    color: white;
-    font-size: 85%;
-    padding: 1rem;
-    width: 20%;
-    text-align: center;
-    margin: auto;
-    margin-top: -1%;
-
+.krishab-tag {
+  color: white;
+  font-size: 85%;
+  padding: 1rem;
+  width: 20%;
+  text-align: center;
+  margin: auto;
+  margin-top: -1%;
 }
 
-.text-group{
-    font-size: 2.2em;
-    margin-left: 13%;
-    margin-top: 10%;
-    font-family: 'Century Gothic'; 
-    font-weight: bolder;
+.text-group {
+  font-size: 2.2em;
+  margin-left: 13%;
+  margin-top: 10%;
+  font-family: "Century Gothic";
+  font-weight: bolder;
 }
