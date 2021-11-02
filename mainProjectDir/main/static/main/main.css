@@ -1,165 +1,201 @@
 @font-face {
-    font-family:'Copperplate Gothic Light';
-    src: url(fonts/COPRGTB.TTF);
+  font-family: "Copperplate Gothic Light";
+  src: url(fonts/COPRGTB.TTF);
 }
 
 @font-face {
-    font-family: 'Century Gothic'; 
-    src: url(fonts/GOTHICB.TTF);
+  font-family: "Century Gothic";
+  src: url(fonts/GOTHICB.TTF);
 }
-
-
 
 body {
-    background-image: url('background.png');
+  background-image: url("background.png");
 }
-
 
 .form-control {
-    margin: 1rem;
+  margin: 1rem;
 }
 
-.form-control input{
-    font: inherit;
-    padding: 0.25rem;
-    border-radius: 4px;
-    border: 1px solid rgb(0, 0, 0); 
-    display: block;
-    width: 25%;
-    margin-top: .5rem auto;
-
+.form-control input {
+  font: inherit;
+  padding: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  display: block;
+  width: 25%;
+  margin-top: 0.5rem auto;
 }
 
-.form-control input:focus{
-    border-color: #1f0050;
-    outline: none;
-    background-color: #f4eeff;
+.form-control input:focus {
+  border-color: #1f0050;
+  outline: none;
+  background-color: #f4eeff;
 }
 
-.form-control label{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 0.5rem;
+.form-control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
-.errorlist{
-    list-style: none;
-    margin: 0;
-    margin-top: .5rem;
-    padding: 0;
-    color: #680000;
+.errorlist {
+  list-style: none;
+  margin: 0;
+  margin-top: 0.5rem;
+  padding: 0;
+  color: #680000;
 }
 
-.errors input{
-    border-color: #680000;
-    background-color: #d6000023;
+.errors input {
+  border-color: #680000;
+  background-color: #d6000023;
 }
 
-.errors label{
-    color: #680000;
+.errors label {
+  color: #680000;
 }
 
-.incompleted-main-panel{
-    background-color: white;
-    margin: auto;
-    text-align: center;
-    width: 35%;
-    border-radius: 25px;
-    padding: 2rem;
+.incompleted-main-panel {
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  width: 35%;
+  border-radius: 25px;
+  padding: 2rem;
 }
 
-.create-task-button{
-    margin: 2%;
-    margin-top: -2%;
-    width: 8%;
-    height: 1.75rem;
-    border-radius: 15px;
-    border-style: none;
-    font-size: 20px;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    color: #ffff;
-    background-image: linear-gradient(to right, #189dff, #6109ff);
+.create-task-button {
+  margin: 2%;
+  margin-top: -2%;
+  width: 8%;
+  margin-bottom: -5%;
+  height: 1.75rem;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 20px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  color: #ffff;
+  background-image: linear-gradient(to right, #189dff, #6109ff);
 }
 
-.incomplete-button{
-    margin: 2%;
-    margin-right: -.5%;
-    padding: .2rem;
-    width: 33%;
-    border-radius: 15px;
-    border-style: none;
-    font-size: 25px;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    background-color: white;
-    background: -webkit-linear-gradient(#9241bb, #fe7507);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.incomplete-button {
+  margin: 2%;
+  margin-right: -0.5%;
+  padding: 0.2rem;
+  width: 33%;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 25px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  background-color: white;
+  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.incomplete-button-active{
-    margin: 2%;
-    margin-right: -.5%;
-    padding: .2rem;
-    width: 33%;
-    border-radius: 15px;
-    border-style: none;
-    font-size: 25px;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    background-color: white;
-    background: -webkit-linear-gradient(#9241bb, #fe7507);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: solid gray;
+.incomplete-button-active {
+  margin: 2%;
+  margin-right: -0.5%;
+  padding: 0.2rem;
+  width: 33%;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 25px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  background-color: white;
+  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: solid gray;
 }
 
-.completed-button{
-    margin: 2%;
-    margin-left: -.5%;
-    padding: .2rem;
-    width: 33%;
-    border-radius: 15px;
-    border-style: none;
-    font-size: 25px;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    background-color: white;
-    background: -webkit-linear-gradient(#9241bb, #fe7507);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.completed-button {
+  margin: 2%;
+  margin-left: -0.5%;
+  padding: 0.2rem;
+  width: 33%;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 25px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  background-color: white;
+  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.completed-button-active{
-    margin: 2%;
-    margin-left: -.5%;
-    padding: .2rem;
-    width: 33%;
-    border-radius: 15px;
-    border-style: none;
-    font-size: 25px;
-    font-family: 'Copperplate Gothic Light'; 
-    font-weight: bolder;
-    background-color: white;
-    background: -webkit-linear-gradient(#9241bb, #fe7507);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border: solid gray;
+.completed-button-active {
+  margin: 2%;
+  margin-left: -0.5%;
+  padding: 0.2rem;
+  width: 33%;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 25px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  background-color: white;
+  background: -webkit-linear-gradient(#9241bb, #fe7507);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: solid gray;
 }
-.completed-main-panel{
-    background-color: white;
-    margin: auto;
-    text-align: center;
-    width: 35%;
-    border-radius: 25px;
-    padding: 2rem;
+.completed-main-panel {
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  width: 35%;
+  border-radius: 25px;
+  padding: 2rem;
 }
-.task-list{
-    list-style: none;
-    border-bottom: solid gray 1px;
-    padding: 2%;
-    margin-right: 10%;
-    text-align: center;
+.task-list {
+  list-style: none;
+  border-bottom: solid gray 1px;
+  padding: 2%;
+  margin-right: 10%;
+  text-align: center;
+}
 
+.delete-button {
+  color: white;
+  background-color: #c62f2d;
+  border-style: none;
+  border-radius: 15px;
+  width: 12%;
+  height: 25px;
+}
+
+.update-button {
+  color: white;
+  background-color: #9caf9f;
+  border-style: none;
+  border-radius: 15px;
+  width: 12%;
+  height: 25px;
+}
+
+.task-detail {
+  color: white;
+  background-color: #189dff;
+  border-style: none;
+  border-radius: 15px;
+  width: 40%;
+  height: 25px;
+}
+
+.logout-button {
+  width: 8%;
+  height: 1.75rem;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 20px;
+  position: absolute;
+  margin-left: 85%;
+  font-weight: bolder;
+  color: #ffff;
+  background-image: linear-gradient(to right, #189dff, #6109ff);
 }

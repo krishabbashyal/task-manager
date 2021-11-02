@@ -14,8 +14,9 @@
             </ul>
         {% endif %}
     </div>
-    <div class = "log-out-button">
-        <a href="{% url 'logout' %}"><button>Log Out</button></a>
+    <div>
+            <!-- prettier-ignore -->
+        <a href="{% url 'logout' %}"><button class = "logout-button">Log Out</button></a>
     </div>
         <h1>Hello {{user.first_name}}!</h1>
         <h3>Let's be productive today.</h3>
@@ -30,9 +31,9 @@
         <div>
             <ul>
                 {% for task in tasks %}
-                    <li class = "task-list"><a href = "{% url 'taskDetail' pk=task.pk%}"><button id = 'task-name'>{{task.title}}</button></a>
-                        <a href = "{% url 'taskUpdate' pk=task.pk%}"><button>Update</button></a>
-                        <a href = "{% url 'taskDelete' pk=task.pk%}"><button>Delete</button></a></li>
+                    <li class = "task-list"><a href = "{% url 'taskDetail' pk=task.pk%}"><button class = "task-detail">{{task.title}}</button></a>
+                        <a href = "{% url 'taskUpdate' pk=task.pk%}"><button class = "update-button">Update</button></a>
+                        <a href = "{% url 'taskDelete' pk=task.pk%}"><button class = "delete-button">Delete</button></a></li>
                 {% endfor %}
             </ul>
         </div>
