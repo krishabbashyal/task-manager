@@ -14,16 +14,22 @@ body {
   overflow-x: hidden;
   background: rgb(48,36,80);
   background: linear-gradient(135deg, rgba(48,36,80,1) 0%, rgba(40,41,83,1) 28%, rgba(0,69,98,1) 100%);
+  font-family: "Century Gothic";
+
 }
 
 html {
-    height: 100%;
+  height: 100%;
+  font-family: "Century Gothic";
+
 }
 body {
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Century Gothic";
+
 }
 
 .register-panel {
@@ -120,15 +126,15 @@ body {
 .account-created-message {
   border-radius: 25px;
   padding: 1rem;
-  width: 25%;
+  width: 30%;
   text-align: center;
   background-color: #d2f4db;
   color: #46763a;
   list-style: none;
   margin: auto;
   margin-top: 10%;
-  margin-left: 36%;
-  margin-bottom: -9%;
+  margin-left: 33%;
+  margin-bottom: -8%;
 }
 
 .form-control input {
@@ -183,4 +189,90 @@ body {
   margin-top: 10%;
   font-family: "Century Gothic";
   font-weight: bolder;
+}
+
+.landing-page-1 h1{
+  font-size: 65px;
+  font-weight: bolder;
+  background-color: white;
+  background: -webkit-linear-gradient(-135deg,#7957f5, #fe7507);
+  width: fit-content;
+  margin-left: 10%;
+  margin-bottom: -6%;
+  margin-top: 5%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.promo-text{
+  color: white;
+  font-size: 18px;
+  width: 40%;
+  text-align: center;
+  margin-left: 10%;
+  margin-top: 7%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.landing-page-2 h1{
+  font-size: 55px;
+  font-weight: bolder;
+  background-color: white;
+  background: -webkit-linear-gradient(-135deg,#7957f5, #fe7507);
+  text-align: right;;
+  width: fit-content;
+  margin-left: 10%;
+  margin-bottom: -2%;
+  margin-top: 1%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-register-button{
+  margin-top: 3%;
+  margin-left: 18%;
+  width: 10%;
+  height: 2.5rem;
+  margin-bottom: -5%;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 30px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  color: #ffff;
+  background-color: #7e92ff;
+}
+
+.home-login-button{
+  margin-top: -2%;
+  width: 10%;
+  height: 2.5rem;
+  margin-bottom: -5%;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 30px;
+  font-family: "Copperplate Gothic Light";
+  font-weight: bolder;
+  color: #ffff;
+  background-color: #7e92ff;
+}
+
+.log-out-message{
+  margin: auto;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: -1%;
+  color: white;
+  padding: 1%;
+  background-color: #7e91ff5e;
+
+
+}
+
+.log-back-in{
+  margin-top: -7%;
+  text-decoration: underline;
+  color: #fe7507;
+  
 }

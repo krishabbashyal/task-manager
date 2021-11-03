@@ -6,18 +6,20 @@
 {% block title %}Task{% endblock title %}
 
 {% block content %}
-<div>
+<h1 class = "page-title">Task: {{task.id}} - {{task.title}}</h1>
+<div class = "task-detail-page">
     <h1>{{task.title}}</h1>
     <p>{{task.description}}</p>
     {% if task.due_date %}
         <p>Due Date: {{task.due_date}}</p>
     {% endif %}
-    <p>Task Completion: {{task.completion}}</p>
     {% if task.completion %}
-        <a href="{% url 'completed' %}"><button>Done</button></a>
+        <p>Task Status: Completed</p>
     {% else %}
-        <a href="{% url 'incompleted' %}"><button>Done</button></a>
+        <p>Task Status: Incomplete</p>
     {% endif %}
+    <button class = "task-update-button" type="button" onclick="history.back()">Go Back</button>
+
 </div>
 
 

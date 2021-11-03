@@ -5,13 +5,33 @@
 
 {% block content%}
 
-<div>
+<div class = "log-out-message">
     <h1>You have been logged out</h1>
         <div>
             <small>
-                Want to log back in? <a href="{% url 'login' %}">Click Here</a> to log back in!
+                Want to log back in? <a class = "log-back-in" href="{% url 'login' %}"> Click Here </a> to log back in!
             </small>
         </div>
+</div>
+    
+
+<div class = "landing-page-1">
+    <h1>Manage all of your tasks,</h1>
+    <h1>from just one place.</h1>
+    <p class = "promo-text">
+        Staying focused is difficult with the number of distractions in the modern world. Therefore, it’s easy to get off track but list of tasks can help you get back on top of it. Seeing a clear outline of what you should be doing can make a huge difference to your productivity, that is where we come in.
+        Task Manager is here to help you uncover what you don’t see at first glance. When you write things down, it forces your brain to think in depth about the task at hand. You may see things that you missed at first, growing your capacity to achieve good results.
+    </p>
+</div>
+<div class = "landing-page-2">
+    <h1>Just a couple more steps,</h1>
+    <h1>see you soon.</h1>
+    <a href="{% url 'register' %}"><button class = "home-register-button">Register</button></a>
+    <a href="{% url 'login' %}"><button class = "home-login-button">Log In</button></a>
+</div>
+
+
+
     <div>
 
 {% endblock content%}

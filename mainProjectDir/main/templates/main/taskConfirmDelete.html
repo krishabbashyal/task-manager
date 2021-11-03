@@ -6,15 +6,15 @@
 {% block title %}Create a Task{% endblock title %}
 
 {% block content %}
-<div>
+<h1 class = "page-title">Confirm task deletion.</h1>
+<div class = "delete-task-panel">
     <form method="post">{% csrf_token %}
         <p>Are you sure you want to delete "{{ object }}"?</p>
-        <button>Delete</button>
+        <p>If the task has been completed you should change status instead.</p>
+
+        <button class = "task-update-button" type="button" onclick="history.back()">Cancel</button>
+        <button class = "task-cancel-button" type ="submit">Delete</button>
+
     </form>
-    {% if task.completion %}
-        <a href="{% url 'completed' %}"><button>Cancel</button></a>
-        {% else %}
-        <a href="{% url 'incompleted' %}"><button>Cancel</button></a>
-        {% endif %}
 </div>
 {% endblock content %}

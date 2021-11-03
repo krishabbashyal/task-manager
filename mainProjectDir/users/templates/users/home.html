@@ -1,23 +1,22 @@
-{% extends 'users/base.html' %} {% load static %} {% block css %}<link
-  rel="stylesheet"
-  href="{% static 'users/users.css' %}"
-/>{% endblock css %} {% block content%}
+{% extends 'users/base.html' %} {% load static %} 
+{% block css %}
+<link rel="stylesheet" href="{% static 'users/users.css' %}"/>
+{% endblock css %} 
+{% block content%}
 
-<div>
-  <div>
+<div class = "landing-page-1">
     <h1>Manage all of your tasks,</h1>
     <h1>from just one place.</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aliquam
-      hic eveniet ex totam sit alias quo velit maxime obcaecati tempore nulla,
-      nemo consequuntur at debitis inventore quisquam rem repellat.
+    <p class = "promo-text">
+        Staying focused is difficult with the number of distractions in the modern world. Therefore, it’s easy to get off track but list of tasks can help you get back on top of it. Seeing a clear outline of what you should be doing can make a huge difference to your productivity, that is where we come in.
+        Task Manager is here to help you uncover what you don’t see at first glance. When you write things down, it forces your brain to think in depth about the task at hand. You may see things that you missed at first, growing your capacity to achieve good results.
     </p>
-  </div>
-  <h1>Just a couple more steps,</h1>
-  <h1>see you soon.</h1>
-
-  <a href="{% url 'register' %}"><button>Register</button></a>
-  <a href="{% url 'login' %}"><button>Log In</button></a>
+</div>
+<div class = "landing-page-2">
+    <h1>Just a couple more steps,</h1>
+    <h1>see you soon.</h1>
+    <a href="{% url 'register' %}"><button class = "home-register-button">Register</button></a>
+    <a href="{% url 'login' %}"><button class = "home-login-button">Log In</button></a>
 </div>
 
 {% endblock content%}

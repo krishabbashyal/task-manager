@@ -14,16 +14,19 @@ body {
   overflow-x: hidden;
   background: rgb(48,36,80);
   background: linear-gradient(135deg, rgba(48,36,80,1) 0%, rgba(40,41,83,1) 28%, rgba(0,69,98,1) 100%);
+  font-family: "Century Gothic";
 }
 
 html {
   height: 100%;
+  font-family: "Century Gothic";
 }
 body {
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Century Gothic";
 }
 
 .form-control {
@@ -98,6 +101,50 @@ body {
   max-height: 60%;
 }
 
+.task-update-form{
+  background-color: white;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+  align-items: center;
+  width: 35%;
+  border-radius: 25px;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 60%;
+}
+
+.task-detail-page{
+  background-color: white;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+  align-items: center;
+  width: 35%;
+  border-radius: 25px;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 60%;
+}
+.delete-task-panel{
+  background-color: white;
+  margin: auto;
+  margin-top: 4%;
+  text-align: center;
+  align-items: center;
+  width: 35%;
+  border-radius: 25px;
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 60%;
+}
+
+.task-update-form input{
+  margin: auto;
+  width: 35%;
+  text-align: center;
+}
+
 .create-task-form input{
   margin: auto;
 }
@@ -108,7 +155,13 @@ body {
   text-align: center;
 }
 
-.create-new-task-page{
+.task-update-form textarea{
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.page-title{
   font-size: 55px;
   font-family: "Century Gothic";
   width: fit-content;
@@ -119,6 +172,38 @@ body {
   margin: auto;
   margin-top: 4%;
   margin-bottom: -3%;
+}
+
+.task-cancel-button{
+  width: 18%;
+  margin-bottom: -5%;
+  height: 1.85rem;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 20px;
+  font-family: "Century Gothic";
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  background-color: #c62f2d;
+  text-align: center;
+  padding-bottom: 1%;
+}
+
+.task-update-button{
+  width: 18%;
+  margin-bottom: -5%;
+  height: 1.85rem;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 20px;
+  font-family: "Century Gothic";
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
+  background-color: #9caf9f;
+  text-align: center;
+  padding-bottom: 1%;
 }
 
 .create-task-form button{

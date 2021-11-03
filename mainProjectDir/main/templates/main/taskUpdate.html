@@ -6,7 +6,8 @@
 {% block title %}Create a Task{% endblock title %}
 
 {% block content %}
-<div>
+<h1 class = "page-title">Update your task.</h1>
+<div class = "task-update-form">
     <form method = "POST">
         {% csrf_token %}
             {% for field in form %}
@@ -17,12 +18,8 @@
                     <hr>
                 </div>
             {% endfor %}
-        <button>Update</button>
+        <button class = "task-update-button" type ="submit">Submit</button>
+        <button class = "task-cancel-button" type="button" onclick="history.back()">Cancel</button>
     </form>
-    {% if task.completion %}
-        <a href="{% url 'completed' %}"><button>Cancel</button></a>
-        {% else %}
-        <a href="{% url 'incompleted' %}"><button>Cancel</button></a>
-        {% endif %}
 </div>
 {% endblock content %}
