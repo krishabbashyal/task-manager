@@ -1,4 +1,0 @@
-Users will need a confirmDelete and confirmComplete value in order to turn off completion and deletion of tasks.
-
-Tasks titles should not be more than 30 characters, anything more and it starts to get too large for the box
-
