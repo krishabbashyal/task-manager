@@ -1,4 +1,4 @@
-A CRUD functionity web application which allows for users to register for an account and create tasks or goals they intend on completeing either eventually, or by a set due date.
+A basic CRUD functionity web application which allows for users to register for an account and create tasks or goals they intend on completeing either eventually, or by a set due date.
 A live version of this application can be found on http://krishabbashyal.pythonanywhere.com/ 
 
 Users are greeted on the home screen, from there they can create a new task. 
