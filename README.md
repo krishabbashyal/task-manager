@@ -19,4 +19,4 @@ Depending on the status, the task will display in the respective category. Unche
 
 ![](https://user-images.githubusercontent.com/68142356/141003862-27961095-268f-4ecf-83f1-ddc64d4296bf.png)
 
-More features such as rooms, friend system, and task alerts coming in the future, possible on a new framework.
+More features such as rooms, friend system, and task alerts coming in the future, possibly on a new framework.
